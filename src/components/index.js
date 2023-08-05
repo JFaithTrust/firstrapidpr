@@ -1,0 +1,5 @@
+export { default as Main } from './Main.jsx'
+export { default as Channel } from './Channel.jsx'
+export { default as VideoDetail } from './VideoDetail.jsx'
+export { default as Search } from './Search.jsx'
+export { default as Navbar} from './Navbar.jsx'

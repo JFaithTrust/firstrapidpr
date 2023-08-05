@@ -1,0 +1,1 @@
+export const logo = "https://avatars.mds.yandex.net/i?id=21d782bb7e04fed95113951d93aa7f4c40b3da04-8209733-images-thumbs&n=13"
