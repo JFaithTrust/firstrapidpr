@@ -1,13 +1,71 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #0A6EBD;
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.search_bar{
+  border: none;
+  outline: none;
+  width: 350px;
+}
+
+
+.category_btn{
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 7px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.category_btn:hover{
+  background-color: #0A6EBD !important;
+  color: white !important;
+}
+
+.category_btn:hover span{
+  color: white !important;
+}
+
+.react_player{
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .search_bar{
+      width: 200px;
+    }
+    .react_player{
+      height: 45vh !important;
+    }
 }
