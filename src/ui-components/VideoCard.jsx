@@ -26,7 +26,7 @@ const VideoCard = ({video}) => {
                     {video?.snippet?.description.slice(0, 70)}
                 </Typography>
             </Link>
-            <>
+            <Link to={`/channel/${video?.snippet?.channelId}`}>
                 <Stack 
                     direction={'row'}
                     position={'absolute'}
@@ -40,7 +40,7 @@ const VideoCard = ({video}) => {
                         <CheckCircleIcon sx={{fontSize: '12px', color: 'gray', ml: '5px'}} />
                     </Typography>
                 </Stack>
-            </>
+            </Link>
         </CardContent>
     </Card>
   )
